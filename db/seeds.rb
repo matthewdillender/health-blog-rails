@@ -210,20 +210,20 @@ Subscription.create(
 
 Comment.create(
   content: "This post really helped me understand the importance of nutrition.",
-  user_id: User.first,
-  post_id: Post.first
+  user_id: User.first.id,
+  post_id: Post.first.id
 )
 
 Comment.create(
   content: "I love the tips mentioned in this post. Will definitely try them out!",
-  user_id: User.first,
-  post_id: Post.second
+  user_id: User.first.id,
+  post_id: Post.second.id
 )
 
 Comment.create(
   content: "Great content! Looking forward to more posts like this.",
-  user_id: User.first,
-  post_id: Post.last
+  user_id: User.first.id,
+  post_id: Post.last.id
 )
 Product.create(
   name: "Protein Powder",

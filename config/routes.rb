@@ -10,9 +10,10 @@ Rails.application.routes.draw do
   
     resources :advertisements
     resources :categories
-    resources :comments
     resources :plans
-    resources :posts
+    resources :posts do
+      resources :comments
+    end
     resources :products
     resources :subscriptions
     resources :users
